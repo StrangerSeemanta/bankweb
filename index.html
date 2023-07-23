@@ -24,7 +24,7 @@
 
     <section>
         <div class="login-form-holder">
-            <form action="summery.html" method="post">
+            <form id="form" action="#" method="post">
                 <h2>Log in to my account</h2>
 
 
@@ -62,4 +62,7 @@
         
     </section>
 </body>
+<script>
+    document.getElementById('form').addEventListener('submit',function(e){e.preventDefault(); window.location.href = 'summery.html'})
+</script>
 </html>
