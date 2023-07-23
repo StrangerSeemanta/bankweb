@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Transfer Details</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="img/logo.png" alt="Bankname" ></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="summery.html">My Account</a></li>
+            <li><a href="#card">Card</a></li>
+            <li><a href="#summary">Rewards & Benefits</a></li>
+            
+        </ul>
+        <ul class="nav-btn-holder">
+
+        </ul>
+    </nav>
+
+    <section class="personal-savings-head">
+        <div class="container">
+            <div class="head-nav">
+                <div class="headline-container">
+                    <p class="phtext">Personal <span>Savings</span></p>
+                    <p class="actext">Account Management</p>
+                </div>
+
+                <nav>
+                    <ul id="hnavul">
+                        <li class=""><a href="summery.html" >Accounts</a></li>
+                        <li class="active"><a href="transfers.html">Transfers</a></li>
+                        <li><a href="#alerts">Alerts</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="profile-info">
+                <p>Welcome, Cho Yuan Long</p>
+                <p>Last Login: 23/07/2023, 12:44p ET</p>
+                <button>Log out</button>
+            </div>
+
+        </div>
+
+        <div class="main-layout">
+            <div class="main-col-1">
+                <div class="welcome-head">
+                    <div class="head">CD Accounts:Xxxxxxxx7880 (continued)</div>
+                    <div class="body">Here you can the transfers history from below.</div>
+                </div>
+
+                <div class="account-table">
+                    <div class="head">Account Activity (continued)</div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="center">Date</th>
+                                <th >Transactions</th>
+                                <th>Credits</th>
+                                <th>Debits</th>
+                                <th class="center"> Balance</th>
+
+                            </tr>
+                            <tr>
+                                <td class="center">05/14/2023</td>
+                                <td >Tranferred</td>
+                                <td></td>
+                                <td>50,000</td>
+                                <td class="center">$869.69</td>
+                            </tr>
+                            <tr>
+                                <td class="center">06/14/2023</td>
+                                <td >Tranferred</td>
+                                <td></td>
+                                <td>50,000</td>
+                                <td class="center">$869.69</td>
+                            </tr>
+                            <tr>
+                                <td class="center">07/14/2023</td>
+                                <td><strong>Ending Balance</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td class="center"><strong>$869.69</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="welcome-head">
+                    <div class="head">Alerts</div>
+                    <div class="body">Currently you have no alerts or warning !!!.</div>
+                </div>
+            </div>
+            <div class="main-col-2">
+                <button class="sidebar-btn">Show Account Number</button>
+                <button class="sidebar-btn">Open Account</button>
+                <button class="sidebar-btn">Contact Personal Savings</button>
+                <button class="sidebar-btn">Need Help?</button>
+            </div>
+        </div>
+       
+    </section>
+</body>
+
+<script>
+    const headNavUl = document.querySelector('#hnavul');
+    var childs = headNavUl.children
+    for(const x of childs){
+        x.addEventListener('click',function(event){
+            for(const y of childs){
+                y.classList.remove('active');
+            }
+            this.classList.add('active')
+        })
+       
+    }
+
+</script>
+</html>

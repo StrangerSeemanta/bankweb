@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Bank Website</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="img/logo.png" alt="Bankname" ></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="summery.html">My Account</a></li>
+            <li><a href="#card">Card</a></li>
+            <li><a href="#summary">Rewards & Benefits</a></li>
+            
+        </ul>
+        <ul class="nav-btn-holder">
+            <button>Log in</button>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="login-form-holder">
+            <form action="summery.html" method="post">
+                <h2>Log in to my account</h2>
+
+
+                <label for="user-id">User ID:</label>
+                <input type="text" id="user-id" name="user-id" required><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                
+                <label for="account-type">Account Type: </label>
+                <select id="account-type" name="card-type">
+                    <option value="Cards and Banking">Cards and Banking</option>
+                    <option value="Membership Rewards">Membership Rewards</option>
+                    <option value="Merchant Account">Merchant Account</option>
+    
+                </select><br>
+        
+                <div class="remember-check">
+                    <input type="checkbox" id="remember-me" name="remember-me"><span>Remember Me</span>
+
+                </div>
+                <button type="submit">Log in</button><br>
+                
+                <div class="links-holder">
+                    
+                <a href="#">Forgot Password or User ID ?</a><br>
+        
+                <a href="#">Create New Online Account</a><br>
+
+                <a href="#">Confirm Card Received</a><br>
+                <a href="#">Visit our Help and support page.</a>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+</body>
+</html>
